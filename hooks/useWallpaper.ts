@@ -1,8 +1,8 @@
-export interface wallpaper {
+export interface Wallpaper {
   url: string;
   name: string;
 }
-export function useWallpaper(): wallpaper[] {
+export function useWallpaper(): Wallpaper[] {
   return [
     {
       url: "https://ideogram.ai/assets/progressive-image/balanced/response/tXg_bWmcRbaIeGWdEE46rA",

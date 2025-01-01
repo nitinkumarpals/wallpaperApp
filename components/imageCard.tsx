@@ -1,4 +1,4 @@
-import { wallpaper } from "@/hooks/useWallpaper";
+import { Wallpaper } from "@/hooks/useWallpaper";
 import { View, Image, StyleSheet, useColorScheme } from "react-native";
 import { ThemedText } from "./ThemedText";
 import { Ionicons } from "@expo/vector-icons";
@@ -9,7 +9,7 @@ export function ImageCard({
   wallpaper,
   onPress,
 }: {
-  wallpaper: wallpaper;
+  wallpaper: Wallpaper;
   onPress: () => void;
 }) {
   const theme = useColorScheme() ?? "light";
