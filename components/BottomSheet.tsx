@@ -14,12 +14,11 @@ export const DownloadPicture = ({ onClose }: { onClose: () => void }) => {
 
   // renders
   return (
-    <View style={styles.container}>
       <BottomSheet
         onClose={onClose}
         ref={bottomSheetRef}
         onChange={handleSheetChanges}
-        snapPoints={["99%"]}
+        snapPoints={["90%"]}
         enablePanDownToClose={true}
         handleIndicatorStyle={{height: 0}}
       >
@@ -27,7 +26,6 @@ export const DownloadPicture = ({ onClose }: { onClose: () => void }) => {
           <Text>Awesome 🎉</Text>
         </BottomSheetView>
       </BottomSheet>
-    </View>
   );
 };
 
